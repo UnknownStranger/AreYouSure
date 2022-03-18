@@ -1,1 +1,1 @@
-FirefoxPlugin
+An annoying firefox plugin to help keep focused.

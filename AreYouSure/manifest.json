@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Are You Sure",
+  "version": "0.1",
+  "description": "Focus up fellas",
+  "browser_action": {
+    "default_icon": "icons/Ed.png",
+    "default_popup": "popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.reddit.com/*",
+        "*://*.twitter.com/*",
+        "*://*.tiktok.com/*",
+        "*://*.etsy.com/*",
+        "*://*.instagram.com/*",
+        "*://*.facebook.com/*",
+        "*://*.example.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "page": "my-background.html"
+  }
+}
